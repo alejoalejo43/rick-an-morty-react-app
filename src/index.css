@@ -1,0 +1,97 @@
+html {
+  overflow-x: hidden;
+}
+.App {
+  font-family: 'Roboto', sans-serif;
+}
+.location-residents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.resident-card {
+  background-color: #062226;
+  color: white;
+}
+.resident-card_header {
+  position: relative;
+}
+
+.resident-card_status {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-end-end-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #062226;
+}
+.resident-card_body {
+  padding: 15px;
+}
+.resident-card_body > ul > li {
+  display: flex;
+  flex-direction: column;
+  color: #ebe7e7;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+.circle {
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.circle.Alive {
+  background-color: #4ab648;
+}
+.circle.Dead {
+  background-color: #b94343;
+}
+.circle.unknown {
+  background-color: #938686;
+}
+.errorMessage {
+  color: white;
+  width: max-content;
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  right: -100%;
+  background-color: red;
+  padding: 5px 15px;
+  animation: 0.3s ease-in forwards showError;
+}
+.errorMessage p {
+  margin: 0;
+}
+@keyframes showError {
+  0% {
+    right: -100%;
+  }
+  50% {
+    right: -50%;
+  }
+  100% {
+    right: 10%;
+  }
+}
+.title {
+  color: #7fef0f;
+}
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
