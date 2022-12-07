@@ -17,7 +17,7 @@ const LocationFilter = ({ locationName, getNewLocation }) => {
   }, [locationName]);
 
   return (
-    <ul>
+    <ul className="ulDimension">
       {locationsOptions?.map((locationOption) => (
         <li
           onClick={() =>

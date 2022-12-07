@@ -6,6 +6,7 @@ import LocationFilter from './components/LocationFilter';
 import Locationinfo from './components/Locationinfo';
 import ResidentList from './components/ResidentList';
 import getRandomNumber from './utils/getRandomNumber';
+import fondo from './images/fondo.jpg';
 
 function App() {
   const [location, setLocation] = useState();
@@ -54,22 +55,32 @@ function App() {
   };
   return (
     <div className="App">
-      <form onSubmit={handleSubmit}>
-        <input
-          id="searchValue"
-          value={locationName}
-          type="text"
-          onChange={handleChangeInput}
-          placeholder="Search your dimention"
-        />
+      <img className="imagen" src={fondo}></img>
+      <form className="formSearch" onSubmit={handleSubmit}>
+        <div className="searchBar">
+          <input
+            className="inputSearch"
+            id="searchValue"
+            value={locationName}
+            type="text"
+            onChange={handleChangeInput}
+            placeholder="Search your dimention"
+          />
+          <div className="filterFrame">
+            <LocationFilter
+              locationName={locationName}
+              getNewLocation={getNewLocation}
+            />
+          </div>
+        </div>
         <button type="submit">Search</button>
         {showError ? <ErrorMessage /> : ''}
       </form>
-      <LocationFilter
-        locationName={locationName}
-        getNewLocation={getNewLocation}
-      />
+      <br />
+
       <Locationinfo location={location} />
+      <br />
+
       <ResidentList location={location} />
     </div>
   );

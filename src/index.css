@@ -1,6 +1,9 @@
 html {
   overflow-x: hidden;
 }
+body {
+  background-color: #0b363d;
+}
 .App {
   font-family: 'Roboto', sans-serif;
 }
@@ -14,6 +17,8 @@ html {
 .resident-card {
   background-color: #062226;
   color: white;
+  box-shadow: 2px 2px 3px #7fef0f;
+  border-radius: 5px;
 }
 .resident-card_header {
   position: relative;
@@ -94,4 +99,88 @@ hr {
   overflow: hidden;
   border-style: inset;
   border-width: 1px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.locationFrame {
+  background-color: #062226;
+  border: 2px solid #7fef0f;
+  border-radius: 10px;
+}
+.locationFrame > h2 {
+  color: rgb(219, 237, 18);
+}
+.App > form > input {
+  width: 300px;
+}
+
+button {
+  background-color: #7fef0f;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 10px;
+}
+
+button:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.dimensionTitle {
+  color: #7fef0f;
+  line-height: 1.5;
+}
+.ulDimension {
+  cursor: pointer;
+}
+.dimensionContent {
+  color: white;
+}
+
+.searchBar {
+  position: relative;
+  width: max-content;
+}
+.filterFrame {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  background: #a1d071;
+  color: #091209;
+  z-index: 2;
+}
+.formSearch {
+  display: flex;
+  justify-content: center;
+}
+
+.imageBig {
+  width: 80%;
+}
+.imagen {
+  background-color: #4ab648;
+  width: 80%;
+  height: 50vh;
+}
+.inputSearch {
+  top: -20px;
 }

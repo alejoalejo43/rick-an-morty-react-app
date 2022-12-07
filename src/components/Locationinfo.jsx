@@ -2,17 +2,20 @@ import React from 'react';
 
 const Locationinfo = ({ location }) => {
   return (
-    <article>
+    <article className="locationFrame">
       <h2>{location?.name}</h2>
-      <ul>
+      <ul className="infoDimension">
         <li>
-          <span>Type:{location?.type}</span>
+          <span className="dimensionTitle">Type: </span>
+          <span className="dimensionContent">{location?.type}</span>
         </li>
         <li>
-          <span>Diomension: {location?.dimension}</span>
+          <span className="dimensionTitle">Dimension: </span>{' '}
+          <span className="dimensionContent">{location?.dimension}</span>
         </li>
         <li>
-          <span>Population: {location?.residents.length}</span>
+          <span className="dimensionTitle">Population: </span>{' '}
+          <span className="dimensionContent">{location?.residents.length}</span>
         </li>
       </ul>
     </article>

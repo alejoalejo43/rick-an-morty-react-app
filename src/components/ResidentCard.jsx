@@ -22,7 +22,7 @@ const ResidentCard = ({ urlResident }) => {
       <section className="resident-card_body">
         <h2>{resident?.name}</h2>
         <hr />
-        <ul>
+        <ul className="infoDimension">
           <li>
             <span className="title">Specie: </span>
             {resident?.species}
