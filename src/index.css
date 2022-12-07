@@ -176,7 +176,27 @@ button:hover {
   margin-top: 15px;
 }
 
-.imagen {
-  width: 80%;
-  height: 50vh;
+@media screen and (max-width: 640px) {
+  .imagen {
+    width: 80%;
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1000px) {
+  .imagen {
+    width: 80%;
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+  .imagen {
+    width: 70%;
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .imagen {
+    width: 60%;
+    height: 70vh;
+  }
 }
