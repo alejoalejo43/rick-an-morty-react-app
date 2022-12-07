@@ -66,12 +66,12 @@ function App() {
             onChange={handleChangeInput}
             placeholder="Search your dimention"
           />
-          <div className="filterFrame">
+          {/* <div className="filterFrame">
             <LocationFilter
               locationName={locationName}
               getNewLocation={getNewLocation}
             />
-          </div>
+          </div> */}
         </div>
         <button type="submit">Search</button>
         {showError ? <ErrorMessage /> : ''}

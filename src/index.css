@@ -159,6 +159,7 @@ button:hover {
 .searchBar {
   position: relative;
   width: max-content;
+  /* top: 10px; */
 }
 .filterFrame {
   position: absolute;
@@ -171,16 +172,11 @@ button:hover {
 .formSearch {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.imageBig {
-  width: 80%;
-}
 .imagen {
-  background-color: #4ab648;
   width: 80%;
   height: 50vh;
-}
-.inputSearch {
-  top: -20px;
 }
